@@ -35,8 +35,24 @@
 .lp-trust span { display: inline-flex; align-items: center; gap: 6px; }
 .lp-trust i { color: var(--ms-made); }
 
+.lp-note { margin: 12px 0 0; font-size: 14px; color: var(--ms-muted); }
+.lp-dark .lp-note { color: var(--ms-on-ink); opacity: 0.85; }
 
-.lp-phone { width: 290px; max-width: 100%; margin: 0 auto; background: var(--ms-ink); border-radius: 38px; padding: 12px;
+
+.lp-hero-art { position: relative; max-width: 420px; width: 100%; margin: 0 auto; padding-bottom: 120px; }
+.lp-hero-art .lp-phone { margin: 0 0 0 auto; }
+.lp-statcard-mini { position: absolute; left: 0; bottom: 0; width: 210px; max-width: 60%; margin: 0; }
+.lp-statcard-mini .top { padding: 10px 12px; font-size: 13px; }
+.lp-statcard-mini .score { font-size: 15px; margin-top: 6px; }
+.lp-statcard-mini .body { padding: 10px 12px; }
+.lp-statcard-mini .name { font-size: 17px; margin-bottom: 6px; }
+.lp-statcard-mini .tiles { gap: 5px; }
+.lp-statcard-mini .tiles div { padding: 6px 2px; }
+.lp-statcard-mini .tiles b { font-size: 18px; }
+.lp-statcard-mini .tiles small { font-size: 10px; }
+
+
+.lp-phone { width: 290px; max-width: 78%; margin: 0 auto; background: var(--ms-ink); border-radius: 38px; padding: 12px;
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28); }
 .lp-screen { background: var(--ms-bg); border-radius: 28px; overflow: hidden; }
 .lp-screen .lp-bar { background: var(--ms-ink); color: var(--ms-on-ink); font-weight: 800; font-size: 15px; padding: 12px 14px; }
@@ -105,6 +121,59 @@
 .lp-statcard .tiles small { color: var(--ms-muted); font-size: 12px; }
 
 
+.lp-season { max-width: 340px; margin: 0 auto; border-radius: 18px; overflow: hidden; border: 1px solid var(--ms-line);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18); background: var(--ms-bg); }
+.lp-season .top { background: var(--ms-ink); color: var(--ms-on-ink); padding: 14px 18px; font-size: 20px; font-weight: 800; }
+.lp-season .top small { display: block; font-size: 13px; font-weight: 600; opacity: 0.85; }
+.lp-season .avg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 14px 18px 6px; }
+.lp-season .avg div { background: var(--ms-tool); border-radius: 10px; text-align: center; padding: 10px 4px; }
+.lp-season .avg b { display: block; font-size: 22px; }
+.lp-season .avg small { color: var(--ms-muted); font-size: 12px; }
+.lp-season .games { list-style: none; margin: 0; padding: 6px 18px 14px; }
+.lp-season .games li { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid var(--ms-line); font-size: 15px; }
+.lp-season .games li:first-child { border-top: 0; }
+.lp-season .games b { margin-left: auto; }
+.lp-season .r { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 6px;
+  font-size: 12px; font-weight: 800; background: var(--ms-tool); color: var(--ms-muted); }
+.lp-season .r.w { background: var(--ms-accent); color: var(--ms-on-accent); }
+
+
+.lp-chat { max-width: 340px; margin: 0 auto; background: var(--ms-surface); border: 1px solid var(--ms-line); border-radius: 22px;
+  padding: 14px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14); }
+.lp-chat .who { text-align: center; font-size: 13px; font-weight: 700; color: var(--ms-muted); padding-bottom: 6px; border-bottom: 1px solid var(--ms-line); }
+.lp-chat .msg { max-width: 82%; padding: 9px 13px; border-radius: 18px; font-size: 15px; line-height: 1.35; }
+.lp-chat .me { align-self: flex-end; background: var(--ms-ink); color: var(--ms-on-ink); border-bottom-right-radius: 6px; }
+.lp-chat .them { align-self: flex-start; background: var(--ms-tool); color: var(--ms-ink); border-bottom-left-radius: 6px; }
+.lp-chat .them small { display: block; font-size: 11px; font-weight: 700; color: var(--ms-muted); }
+.lp-chat .link { display: flex; gap: 10px; align-items: center; background: var(--ms-surface); color: var(--ms-ink); border: 2px solid var(--ms-ink); }
+.lp-chat .link i { color: var(--ms-primary); font-size: 20px; }
+.lp-chat .link small, .lp-chat .card small { display: block; font-size: 12px; opacity: 0.8; }
+.lp-chat .card { background: var(--ms-bg); color: var(--ms-ink); border: 2px solid var(--ms-ink); font-weight: 800; }
+.lp-chat .card .w { display: inline-block; background: var(--ms-accent); color: var(--ms-on-accent); border-radius: 5px; padding: 0 7px; margin-right: 6px; }
+.lp-chat .card small { font-weight: 600; margin-top: 3px; }
+
+.lp-art-first { order: 2; }
+@media (min-width: 860px) { .lp-art-first { order: 0; } }
+
+
+.lp-dark .lp-card-dark { background: transparent; border-color: rgba(255, 255, 255, 0.25); }
+.lp-dark .lp-card-dark h3 { color: var(--ms-on-ink); }
+
+
+.lp-founder { margin: 28px auto 0; font-size: 16px; font-weight: 700; color: var(--ms-ink); display: inline-flex; gap: 8px; align-items: center; }
+.lp-founder i { color: var(--ms-primary); font-size: 20px; }
+
+
+.lp-stickybar { display: none; }
+@media (max-width: 719px) {
+  .lp-stickybar.show { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--ms-surface);
+    border-top: 1px solid var(--ms-line); box-shadow: 0 -6px 20px rgba(15, 23, 42, 0.12);
+    padding: 10px max(16px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); }
+  .lp-stickybar .lp-btn { width: 100%; min-height: 52px; font-size: 17px; }
+  .lp-footer { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+}
+
+
 .lp-plans { display: grid; gap: 18px; max-width: 760px; margin: 0 auto; }
 @media (min-width: 720px) { .lp-plans { grid-template-columns: 1fr 1fr; } }
 .lp-plan { background: var(--ms-surface); border: 2px solid var(--ms-line); border-radius: 18px; padding: 26px; position: relative; }
@@ -114,6 +183,7 @@
 .lp-plan .price { font-size: 44px; font-weight: 800; margin: 6px 0 0; }
 .lp-plan .price small { font-size: 17px; font-weight: 600; color: var(--ms-muted); }
 .lp-plan .per { color: var(--ms-muted); margin: 0 0 16px; }
+.lp-plan .per-big { font-size: 19px; font-weight: 800; color: var(--ms-made); }
 .lp-plan .lp-btn { width: 100%; margin-top: 18px; }
 
 

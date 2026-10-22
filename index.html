@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Moma Stats - your player's basketball stats, kept from the stands</title>
-  <meta name="description" content="Keep your player's basketball stats from the stands with one tap per stat, even with no signal. Watch their season grow and share the big nights with family. 30 days free.">
+  <title>Moma Stats - basketball stats for parents, kept from the stands</title>
+  <meta name="description" content="Moma Stats is the basketball stat tracker for parents. One tap per stat from the stands, even with no signal. Watch your child's season grow and share the big nights with family. 30 days free.">
   <meta name="theme-color" content="#1F2A44">
-  <meta property="og:title" content="Moma Stats - every game, every bucket, kept from the stands">
-  <meta property="og:description" content="One tap per stat, works with no signal, and your videos never leave your phone. 30 days free.">
-  <meta property="og:image" content="icons/icon-512.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://momastats.com/">
+  <meta property="og:site_name" content="Moma Stats">
+  <meta property="og:title" content="Moma Stats - basketball stats for parents">
+  <meta property="og:description" content="Keep your player's stats from the stands, one tap per stat, even with no signal. Share the big nights with family. 30 days free.">
+  <meta property="og:image" content="https://momastats.com/icons/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/icon-180.png">
   <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
@@ -26,23 +32,24 @@
     </div>
   </header>
 
-  <section class="lp-hero">
+  <section class="lp-hero" id="top">
     <div class="lp-wrap lp-hero-grid">
       <div>
-        <span class="lp-eyebrow">For basketball parents</span>
+        <span class="lp-eyebrow">Basketball stats for parents</span>
         <h1>You're already at every game. Now keep every stat.</h1>
-        <p class="lp-sub">Moma Stats turns your phone into your player's own stat book. One tap per stat from the stands, even with no signal. Watch their season grow, and share the big nights with the people who couldn't be there.</p>
+        <p class="lp-sub">Moma Stats turns your phone into your player's own stat book. One tap per stat from the stands, even with no signal. Watch them grow game by game, and share the big nights with the family who couldn't be there.</p>
         <div class="lp-actions">
           <a class="lp-btn lp-btn-primary" href="soon.html">Start your free 30-day trial</a>
           <a class="lp-btn lp-btn-ghost" href="#how">See how it works</a>
         </div>
+        <p class="lp-note">Card needed to start. Not charged for 30 days. Cancel in a minute.</p>
         <div class="lp-trust">
-          <span><i class="bi bi-check-circle-fill"></i> 30 days free</span>
-          <span><i class="bi bi-check-circle-fill"></i> Cancel any time</span>
-          <span><i class="bi bi-check-circle-fill"></i> Your videos never leave your phone</span>
+          <span><i class="bi bi-people-fill"></i> Up to 5 kids and 4 parents, one price</span>
+          <span><i class="bi bi-wifi-off"></i> Works with no signal</span>
+          <span><i class="bi bi-phone"></i> iPhone, iPad and Android. No App Store.</span>
         </div>
       </div>
-      <div aria-hidden="true">
+      <div class="lp-hero-art" aria-hidden="true">
         <div class="lp-phone">
           <div class="lp-screen">
             <div class="lp-bar">Moma <span>Stats</span></div>
@@ -61,6 +68,13 @@
             </div>
           </div>
         </div>
+        <div class="lp-statcard lp-statcard-mini">
+          <div class="top"><span class="w">W</span>FINAL<div class="score">Wylie 54, Lincoln 48</div></div>
+          <div class="body">
+            <div class="name">Rebecca #12</div>
+            <div class="tiles"><div><b>16</b><small>PTS</small></div><div><b>7</b><small>REB</small></div><div><b>4</b><small>AST</small></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -68,9 +82,9 @@
   <section class="lp-strip" aria-label="Highlights">
     <div class="lp-wrap">
       <span><i class="bi bi-hand-index-thumb"></i>One tap per stat</span>
-      <span><i class="bi bi-wifi-off"></i>Works with no signal</span>
-      <span><i class="bi bi-phone"></i>iPhone, iPad and Android</span>
-      <span><i class="bi bi-people"></i>Every child kept separate</span>
+      <span><i class="bi bi-graph-up-arrow"></i>Season averages build themselves</span>
+      <span><i class="bi bi-camera-video-off"></i>Your videos never leave your phone</span>
+      <span><i class="bi bi-shield-lock"></i>Private by default</span>
     </div>
   </section>
 
@@ -89,60 +103,95 @@
   <section class="lp-section lp-fog">
     <div class="lp-wrap lp-split">
       <div>
-        <h2 class="lp-h2">Made for the bleachers.</h2>
-        <p class="lp-lead">Gyms are loud, games are fast and the signal is usually terrible. Moma Stats was built for exactly that.</p>
+        <h2 class="lp-h2">A whole season, not just a night.</h2>
+        <p class="lp-lead">Memory blurs by the end of the season. The stats don't. Every game adds to their story, so you can see how far they've come.</p>
         <ul class="lp-checks">
-          <li><i class="bi bi-check-lg"></i><span><b>No signal? No problem.</b> Every tap saves on your phone first and sends itself when you're back online.</span></li>
-          <li><i class="bi bi-check-lg"></i><span><b>One thumb is enough.</b> Big, clear buttons you can hit without taking your eyes off the court for long.</span></li>
+          <li><i class="bi bi-check-lg"></i><span><b>Their season at a glance.</b> Points, shooting and rebounds per game, worked out for you after every game.</span></li>
           <li><i class="bi bi-check-lg"></i><span><b>Where every shot came from.</b> Tap the spot on the court and a shot chart builds over the season.</span></li>
-          <li><i class="bi bi-check-lg"></i><span><b>Two parents, one book.</b> Invite your partner. Whoever's at the game keeps the stats, and the other can watch them come in live.</span></li>
           <li><i class="bi bi-check-lg"></i><span><b>Siblings and seasons kept apart.</b> School, club and summer seasons for every child, each with their own history.</span></li>
+          <li><i class="bi bi-check-lg"></i><span><b>Yours to keep.</b> Download every stat any time, even if you stop paying.</span></li>
         </ul>
       </div>
       <div aria-hidden="true">
-        <div class="lp-statcard">
-          <div class="top"><span class="w">W</span>FINAL<div class="score">Wylie 54, Lincoln 48</div></div>
-          <div class="body">
-            <div class="name">Rebecca #12</div>
-            <div class="tiles"><div><b>16</b><small>PTS</small></div><div><b>7</b><small>REB</small></div><div><b>4</b><small>AST</small></div></div>
+        <div class="lp-season">
+          <div class="top">Rebecca #12 <small>Winter season, 12 games</small></div>
+          <div class="avg">
+            <div><b>13.4</b><small>PPG</small></div>
+            <div><b>44.8%</b><small>FG%</small></div>
+            <div><b>6.1</b><small>RPG</small></div>
           </div>
+          <ul class="games">
+            <li><span class="r w">W</span>vs Lincoln 54-48<b>16 pts</b></li>
+            <li><span class="r">L</span>at Plano 41-45<b>11 pts</b></li>
+            <li><span class="r w">W</span>vs Allen 50-39<b>14 pts</b></li>
+          </ul>
         </div>
-        <p class="ms-small ms-muted lp-center" style="margin-top:12px">A stat card, ready for the family group chat.</p>
+        <p class="ms-small ms-muted lp-center" style="margin-top:12px">Her season so far, kept game by game.</p>
       </div>
     </div>
   </section>
 
-  <section class="lp-section">
-    <div class="lp-wrap lp-grid3">
-      <div class="lp-card"><span class="lp-icon"><i class="bi bi-camera-video-off"></i></span><h3>Your videos stay yours</h3><p>Film with your phone's camera like you always do. Moma Stats never uploads or keeps your videos. Share them straight from your phone.</p></div>
-      <div class="lp-card"><span class="lp-icon"><i class="bi bi-lock"></i></span><h3>Private by default</h3><p>Your stats belong to your family. Nothing is public, and every link you share is private and can be turned off any time.</p></div>
-      <div class="lp-card"><span class="lp-icon"><i class="bi bi-broadcast"></i></span><h3>A live link for family</h3><p>Grandma two states away can watch the points add up as they happen. No app or account needed on her end.</p></div>
+  <section class="lp-section" id="family">
+    <div class="lp-wrap lp-split">
+      <div aria-hidden="true" class="lp-art-first">
+        <div class="lp-chat">
+          <div class="who">Family</div>
+          <div class="msg me">Rebecca's game just tipped off! Follow along:</div>
+          <div class="msg me link"><i class="bi bi-broadcast"></i><span><b>Rebecca #12 - live now</b><small>Moma Stats</small></span></div>
+          <div class="msg them"><small>Grandma</small>Watching from the kitchen! Go #12!</div>
+          <div class="msg me">Final! 16 points and 7 rebounds.</div>
+          <div class="msg me card"><span class="w">W</span>Wylie 54, Lincoln 48<small>Rebecca #12 &middot; 16 PTS &middot; 7 REB &middot; 4 AST</small></div>
+          <div class="msg them"><small>Grandpa</small>So proud of her!</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="lp-h2">Grandma can't make every game.</h2>
+        <p class="lp-lead">Now she doesn't miss a thing. The people who love your player get to cheer too, from wherever they are.</p>
+        <ul class="lp-checks">
+          <li><i class="bi bi-check-lg"></i><span><b>A live link at tip-off.</b> Family watches the points add up as they happen. No app or account needed on their end.</span></li>
+          <li><i class="bi bi-check-lg"></i><span><b>A stat card at the final buzzer.</b> One tap sends it to the family group chat.</span></li>
+          <li><i class="bi bi-check-lg"></i><span><b>Up to 4 parents or guardians.</b> Co-parents and grandparents share one family plan. Whoever's at the game keeps the stats; nobody pays twice.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section lp-fog">
+    <div class="lp-wrap lp-center">
+      <h2 class="lp-h2">Your child's game. Your family's memories. Your privacy.</h2>
+      <p class="lp-lead">No public player profiles, no team account, no ads. Your family decides what to share.</p>
+      <div class="lp-grid3" style="text-align:left">
+        <div class="lp-card"><span class="lp-icon"><i class="bi bi-camera-video-off"></i></span><h3>Your videos stay on your phone</h3><p>Film with your phone's camera like you always do. Moma Stats never uploads or keeps your videos. Share them straight from your phone.</p></div>
+        <div class="lp-card"><span class="lp-icon"><i class="bi bi-shield-lock"></i></span><h3>Your stats, kept safe</h3><p>We keep your stats on our servers so they sync between phones and you never lose a season. We never show ads and never sell your data.</p></div>
+        <div class="lp-card"><span class="lp-icon"><i class="bi bi-link-45deg"></i></span><h3>Share only what you choose</h3><p>Nothing is public. Stat cards and live links go only to the people you send them to, and any link can be turned off any time.</p></div>
+      </div>
     </div>
   </section>
 
   <section class="lp-section lp-dark">
     <div class="lp-wrap lp-center">
-      <h2 class="lp-h2">Three steps. Nothing to pay for 30 days.</h2>
-      <p class="lp-lead">Set it up in the car on the way to the game.</p>
+      <h2 class="lp-h2">Made for the bleachers.</h2>
+      <p class="lp-lead">Gyms are loud, games are fast and the signal is usually terrible. Moma Stats was built for exactly that.</p>
       <div class="lp-grid3" style="text-align:left">
-        <div class="lp-card" style="background:transparent;border-color:rgba(255,255,255,.25)"><span class="lp-num">1</span><h3>Create your account</h3><p>Name, email and a password. Add a card on Stripe's secure page; you aren't charged for 30 days.</p></div>
-        <div class="lp-card" style="background:transparent;border-color:rgba(255,255,255,.25)"><span class="lp-num">2</span><h3>Add your player</h3><p>First name, jersey number, team and season. Add brothers and sisters any time.</p></div>
-        <div class="lp-card" style="background:transparent;border-color:rgba(255,255,255,.25)"><span class="lp-num">3</span><h3>Keep your first game</h3><p>Tap Start a new game at tip-off. That's it. The stats take care of themselves.</p></div>
+        <div class="lp-card lp-card-dark"><span class="lp-icon"><i class="bi bi-wifi-off"></i></span><h3>No signal? Keep tapping.</h3><p>Every tap saves on your phone first and sends itself when you're back online. You can even start a game with no signal.</p></div>
+        <div class="lp-card lp-card-dark"><span class="lp-icon"><i class="bi bi-hand-index-thumb"></i></span><h3>One thumb is enough</h3><p>Big, clear buttons you can hit without taking your eyes off the court for long.</p></div>
+        <div class="lp-card lp-card-dark"><span class="lp-icon"><i class="bi bi-phone"></i></span><h3>No App Store needed</h3><p>Open momastats.com and add it to your home screen. It opens like any other app on iPhone, iPad and Android.</p></div>
       </div>
       <p style="margin-top:28px"><a class="lp-btn lp-btn-light" href="soon.html">Start your free trial</a></p>
+      <p class="lp-note">Card needed to start. Not charged for 30 days. Cancel in a minute.</p>
     </div>
   </section>
 
   <section class="lp-section" id="pricing">
     <div class="lp-wrap lp-center">
       <h2 class="lp-h2">One simple price for the whole family.</h2>
-      <p class="lp-lead">Every plan starts with 30 days free. Up to 5 players and 4 parents, all included.</p>
+      <p class="lp-lead">Every plan starts with 30 days free. Up to 5 players and 4 parents or guardians, all included.</p>
       <div class="lp-plans" style="text-align:left">
         <div class="lp-plan best">
-          <span class="tag">Best value</span>
+          <span class="tag">Best value &middot; Save 50%</span>
           <h3 style="margin:0;font-size:20px;font-weight:800">Yearly</h3>
           <p class="price">$29.99<small> / year</small></p>
-          <p class="per">That's about $2.50 a month.</p>
+          <p class="per per-big">Just $2.50 a month, billed once a year.</p>
           <ul class="lp-checks">
             <li><i class="bi bi-check-lg"></i>Unlimited games and seasons</li>
             <li><i class="bi bi-check-lg"></i>Shot charts and season stats</li>
@@ -162,7 +211,7 @@
           <a class="lp-btn lp-btn-ghost" href="soon.html">Start free trial</a>
         </div>
       </div>
-      <p class="ms-small ms-muted" style="margin-top:16px">Cancel before your trial ends and you pay nothing. If you stop paying, you can still see and download every stat.</p>
+      <p class="ms-small ms-muted" style="margin-top:16px">A card is needed to start your trial, and you aren't charged for 30 days. Cancel before then and you pay nothing. If you stop paying, you can still see and download every stat.</p>
     </div>
   </section>
 
@@ -172,8 +221,10 @@
       <div class="lp-faq" style="margin-top:24px">
         <details><summary>Do I need my child's coach or team to sign up?</summary><p>No. Moma Stats is your family's own record of your player. There's no team account, and nothing goes to the team or the coach unless you choose to share it.</p></details>
         <details><summary>Do I have to download it from the App Store?</summary><p>No. Open momastats.com on your phone and add it to your home screen; it then opens like any other app, on iPhone, iPad and Android. We show you how, step by step, when you sign up.</p></details>
+        <details><summary>Why do you need a card for a free trial?</summary><p>So your stats keep going without a break when the trial ends. You aren't charged for 30 days, and you can cancel from Account in about a minute.</p></details>
         <details><summary>What if the gym has no signal?</summary><p>Keep tapping. Every stat saves on your phone right away and sends itself as soon as you're back online. You can even start a new game with no signal.</p></details>
         <details><summary>Do you store my videos?</summary><p>Never. Your videos stay on your phone. When you want to share one, it goes straight from your phone to whoever you send it to. You can also paste a link to a video you posted on your own YouTube.</p></details>
+        <details><summary>What do you keep, then?</summary><p>Your account, your players' names and numbers, and the stats you tap. We keep them so they sync between phones and are safe if you lose yours. We never show ads, never sell your data, and nothing is public.</p></details>
         <details><summary>Which stats can I keep?</summary><p>Points, made and missed 2s, 3s and free throws, where each shot came from, offensive and defensive rebounds, assists, steals, blocks, turnovers and fouls. Moma Stats works out the percentages and season averages for you.</p></details>
         <details><summary>Can two parents keep stats?</summary><p>Yes. Invite your partner, or a grandparent, at no extra cost. One phone keeps the stats at each game so nothing is counted twice, and everyone else can watch live.</p></details>
         <details><summary>I have more than one child playing. Is that extra?</summary><p>No. Up to 5 players are included, each with their own seasons and history.</p></details>
@@ -187,6 +238,8 @@
       <h2 class="lp-h2">Their season goes by fast. Keep it.</h2>
       <p class="lp-lead">Start tonight. Your first 30 days are free.</p>
       <a class="lp-btn lp-btn-primary" href="soon.html">Start your free 30-day trial</a>
+      <p class="lp-note">Card needed to start. Not charged for 30 days. Cancel in a minute.</p>
+      <p class="lp-founder"><i class="bi bi-dribbble"></i> Made by a basketball parent with 63 years in the game.</p>
     </div>
   </section>
 
@@ -202,5 +255,20 @@
     </div>
   </footer>
 
+  <div class="lp-stickybar" id="lpSticky">
+    <a class="lp-btn lp-btn-primary" href="soon.html">Start your free 30-day trial</a>
+  </div>
+
+  <script>
+    // Phones: the trial button rides along at the bottom once the hero is out of view. It only
+    // appears and disappears; it never moves the page.
+    (function () {
+      var bar = document.getElementById("lpSticky"), hero = document.getElementById("top");
+      if (!bar || !hero || !("IntersectionObserver" in window)) { return; }
+      new IntersectionObserver(function (entries) {
+        bar.classList.toggle("show", !entries[0].isIntersecting);
+      }).observe(hero);
+    })();
+  </script>
 </body>
 </html>
